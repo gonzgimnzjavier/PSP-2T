@@ -36,17 +36,5 @@ public class Persona implements Serializable {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	public static Persona crearPersona() {
-		System.out.println("introduce datos de la nueva persona");
-		Persona p = new Persona();
-		System.out.println("Dame el nombre");
-		String s=sc.nextLine();
-		System.out.println("Dame la edad");
-		int e = sc.nextInt();
-		p.setEdad(e);
-		p.setNombre(s);
-		
-		return p;
-
-	}
+	
 }// Fin de Persona
