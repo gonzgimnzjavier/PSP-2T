@@ -1,6 +1,7 @@
 package mcastTime;
 
 import java.net.*;
+import java.util.Date;
 import java.util.Scanner;
 
 public class ServidorMCTime {
@@ -15,21 +16,25 @@ public class ServidorMCTime {
 
         String cadena = "";
         while (!cadena.trim().equals("quit")) {
-            System.out.print("Datos a enviar al grupo: ");
-            System.out.println(ms.getInetAddress());
-            cadena = sc.nextLine();
+            //System.out.print("Datos a enviar al grupo: ");
             
+            cadena = mostratTiempo();
+            Thread.sleep(10000);            
             // ENVIANDO AL GRUPO
             DatagramPacket paquete = new DatagramPacket(cadena.getBytes(), cadena.length(), grupo, puerto);
             ms.send(paquete);
         }
 
         // Cerrar el socket fuera del bucle
-        ms.leaveGroup(grupo); // Opcional, para salir del grupo multicast
+       // Opcional, para salir del grupo multicast
         ms.close();
         System.out.println("Socket cerrado...");
     }
     public static String mostratTiempo() {
+    	
+    	Date date = new Date();
+    	System.out.println(date.toString());
+    	return date.toString();
     	
     }
 }
