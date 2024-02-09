@@ -12,8 +12,7 @@ public class ClientChat {
 																										// try-with-resources
 																										// para el
 																										// manejo																							// automático de
-																										// recursos
-
+																										// recurso
 			byte[] enviados = new byte[1024];
 			byte[] recibidos = new byte[1024];
 

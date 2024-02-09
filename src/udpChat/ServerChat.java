@@ -6,7 +6,7 @@ import java.net.InetAddress;
 
 public class ServerChat {
 
-    public static void main(String[] args) throws Exception {
+    /*public static void main(String[] args) throws Exception {
 
         // Puerto por el que escucha el servidor: 9876
         try (DatagramSocket serverSocket = new DatagramSocket(9876)) {
@@ -40,5 +40,11 @@ public class ServerChat {
             }
             System.out.println("Socket cerrado...");
         }
+        public static String respuestaAlCliente(String cad) {
+	        System.out.println("Respuesta: " + respuesta);
+	        System.out.println("t\Mensaje a enviar:");
+	        String respuesta= sc.nextLine();
+	        return "hola";
+        }*/
     }
-}
+
