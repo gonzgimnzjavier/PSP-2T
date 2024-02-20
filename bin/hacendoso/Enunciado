@@ -1,0 +1,10 @@
+Dada la clase Elemento del material auxiliar se desea preparar un cliente TCP
+ que permita preparar un carro de la compra (un arrayList de como
+  mínimo 6 Elementos).
+
+Una vez preparado el carro se enviará a un servidor TCP
+ que procesa dicha compra, calculando el importe base de la misma,
+  le aplicará el IVA correspondiente 21% y obtendrá el precio final a pagar.
+
+Estas tres cantidades, base, iva y total se enviarán 
+de vuelta al cliente mostrandolas apropiadamente. 
